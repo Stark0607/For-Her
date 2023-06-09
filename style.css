@@ -1,0 +1,85 @@
+html{    background-color: rgb(22, 29, 18); }
+
+
+
+*{
+    box-sizing: border-box;
+  }
+  .container {
+    padding: 100px 30px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  
+  /*Relevant styles */ 
+  .image-stack {
+    display: grid;
+    position: relative; /* imperative for the overlapping to work*/ 
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 50px);
+  }
+  
+  .image-stack__item--bottom {
+    grid-column: 3 / 13;
+    grid-row: 1;
+  }
+  
+  .image-stack__item--top {
+    grid-row: 1;
+    grid-column: 7 / 9;
+    padding-top: 20%; /* slightly arbitrary, keeps proportion once resized*/ 
+    z-index: 1; /*tells the browser to make this image on top*/
+  }
+  
+  img {
+    width: 100%;
+    
+  }
+
+  .name{
+    position: relative;
+    padding: 0%;
+    grid-column: 5 /9;
+    grid-row: 2/-1;
+    z-index: 1;
+    padding-left: 50px;
+    padding-top: 25px;
+  }
+  h2{
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 200px;
+    color: rgb(255, 228, 132);
+    font-weight: 400;
+  }
+  h1{
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 100px;
+    color: rgb(255, 228, 132);
+    font-weight: 400;
+  }
+  .ily{
+    position: relative;
+    padding: 0%;
+    grid-column: 4 /-1;
+    grid-row: 9/-1;
+    z-index: 1;
+    padding-left: 50px;
+    
+  }
+  .quote{
+    position: relative;
+    
+    grid-column: 3 /-1;
+    grid-row: 11/15;
+    z-index: 1;
+    padding-left: 33px;
+    padding-top: 45px;
+    
+  }
+  p{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: rgb(251, 252, 253);
+  }
+ 
